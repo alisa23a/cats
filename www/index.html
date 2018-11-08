@@ -10,20 +10,22 @@
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="cats.css">
     <title>CATS</title>
 </head>
 
-<body>
+<body style="margin:0; padding:0; overflow:hidden;"  onload="init()">
 	<script>
 		StatusBar.hide();
 	</script>
-	<div id="wrap" style="width:100vw; height:100vh;">
-	<p>test</p>
-		<iframe src="http://alisabadass.ml/cats/cats.html" style="position: absolute; width:100%; height: 90%; border: none">
-		Your browser does not support iframes! :(
-		</iframe>
-	<p>/test</p>
+	<div id = "gameArea">
+		<canvas id="canvas"></canvas>
+		<canvas id="panelCanvas"></canvas>
+		<canvas id="panelUnderCanvas"></canvas>
+		<canvas id="canvasUpper"></canvas>
+		<canvas id="canvasBg"></canvas>
 	</div>
+	<script src="cats.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
