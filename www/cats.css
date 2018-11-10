@@ -42,13 +42,14 @@ body {
 /* 	font-family: 'a_futuraroundbold';
 	font-family: 'a_futuraroundregular'; */
 	font-family: 'a_futurarounddemiregular';
+	overflow:hidden;
 }
 
 
 
 #gameArea {
   background: #ffffff;
-  position: absolute;
+  position: fixed;
   left:     50%;
   top:      50%;
   font-family: 'a_futurarounddemiregular';
